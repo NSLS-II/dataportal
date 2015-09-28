@@ -1,2 +1,2 @@
-from .data_muxer import (DataMuxer, ColSpec, dataframe_to_dict,
-                         BinningError, BadDownsamplerError)
+from datamuxer.datamuxer import (DataMuxer, ColSpec, dataframe_to_dict,
+                                 BinningError, BadDownsamplerError)
