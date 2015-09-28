@@ -1,6 +1,5 @@
 import sys
 import logging
-from .sources import *
 
 __all__ = ['DataBroker', 'DataMuxer', 'StepScan', 'get_images', 'get_events',
            'get_table']
