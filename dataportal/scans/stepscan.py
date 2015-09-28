@@ -1,6 +1,7 @@
 from ..broker import DataBroker
 from ..muxer import DataMuxer
 from pandas import DataFrame
+from warnings import warn
 
 
 class _StepScanClass(object):
@@ -10,6 +11,7 @@ class _StepScanClass(object):
     "Use the DataBroker interface to obtain step scan data as a DataFrame."
     fill_events = True
     def __getitem__(self, val):
+        warn("StepScan is deprecated and will be removed. Use get_table.")
         headers = DataBroker[val]
         return _step_scan_df(headers, self.fill_events)
 
@@ -61,6 +63,7 @@ class _StepScanClass(object):
         >>> find_headers(data_key='motor1')
         >>> find_headers(data_key='motor1', start_time='2015-03-05')
         """
+        warn("StepScan is deprecated and will be removed. Use get_table.")
         headers = DataBroker(**kwargs)
         return _step_scan_df(headers, cls.fill_events)
 
