@@ -21,7 +21,6 @@ setup(
               'dataportal.examples',
               'dataportal.examples.sample_data',
               'dataportal.broker', 'dataportal.muxer',
-              'dataportal.sources', 'dataportal.sources.dummy_sources',
               'dataportal.utils', 'dataportal.scans',
               ],
 )

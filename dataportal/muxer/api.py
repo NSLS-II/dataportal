@@ -1,1 +1,1 @@
-from .data_muxer import DataMuxer
+from datamuxer.datamuxer import DataMuxer
