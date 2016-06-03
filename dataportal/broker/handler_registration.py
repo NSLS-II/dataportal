@@ -1,1 +1,0 @@
-from databroker.handler_registration import register_builtin_handlers

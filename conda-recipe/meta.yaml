@@ -15,33 +15,18 @@ build:
 requirements:
   build:
     - python
-    - numpy
-    - six
 
   run:
     - python
-    - pandas
-    - pyyaml
-    - pims
-    - metadatastore >=0.2.0
-    - filestore >=0.2.0
-    - channelarchiver
-    - six
-    - humanize
-    - tzlocal
+    # still needed because StepScan
+    - databroker
+    - datamuxer
 
 test:
   requires:
     - nslsii_dev_configuration
   imports:
     - dataportal
-    - dataportal.api
-    - dataportal.testing
-    - dataportal.examples
-    - dataportal.examples.sample_data
-    - dataportal.broker
-    - dataportal.muxer
-    - dataportal.utils
 
 about:
   home: https://github.com/NSLS-II/dataportal
