@@ -1,4 +1,6 @@
 DEPRECATED.
 
-Use [databroker] (https://github.com/NSLS-II/databroker) and [datamuxer] 
-(https://github.com/NSLS-II/datamuxer) as independent packages.
+This repository has been split into
+[databroker](https://github.com/NSLS-II/databroker) for data access and
+[datamuxer](https://github.com/NSLS-II/datamuxer) for combining asynchronous
+data streams.
